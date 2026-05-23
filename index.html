@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Physical Therapy & Wellness Center, Inc.</title>
+  <meta name="description" content="Personalized physical therapy and wellness care designed to help you recover, restore, and reach your full potential. Private treatment rooms and expert care.">
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="main-header" id="main-header">
+    <div class="container header-container">
+      <a href="#" class="logo-link" aria-label="Elite Physical Therapy & Wellness Center Home">
+        <img src="./elite_logo_transparent_background.svg" alt="Elite Physical Therapy Logo" class="logo-img" id="logo-img">
+      </a>
+      
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link" id="nav-link-about">About Us</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link" id="nav-link-services">Our Services</a></li>
+          <li class="nav-item"><a href="#conditions" class="nav-link" id="nav-link-conditions">Conditions We Treat</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link" id="nav-link-patient-resources">Patient Resources</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Button -->
+      <div class="header-action">
+        <button class="btn btn-primary open-booking-modal" id="header-cta-btn">
+          BOOK AN APPOINTMENT
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero-section">
+      <div class="container hero-container">
+        <!-- Left Content -->
+        <div class="hero-content">
+          <p class="hero-tagline animate-reveal" id="hero-tagline">PERSONALIZED CARE. PROVEN RESULTS.</p>
+          <h1 class="hero-title animate-reveal" id="hero-title">
+            <span>Move Better.</span>
+            <span>Feel Stronger.</span>
+            <span>Live Fully.</span>
+          </h1>
+          <p class="hero-description animate-reveal" id="hero-description">
+            Personalized physical therapy and wellness care designed to help you recover, restore, and reach your full potential.
+          </p>
+          
+          <div class="hero-actions animate-reveal" id="hero-actions">
+            <button class="btn btn-primary btn-icon open-booking-modal" id="hero-cta-book">
+              <svg xmlns="http://www.w3.org/2000/svg" class="btn-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              BOOK AN APPOINTMENT
+            </button>
+            <a href="#services" class="btn btn-secondary" id="hero-cta-services">OUR SERVICES</a>
+          </div>
+
+          <div class="hero-badge animate-reveal" id="hero-insurance-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" class="badge-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+            <span>Most Insurance Plans Accepted</span>
+          </div>
+        </div>
+
+        <!-- Right Graphic -->
+        <div class="hero-graphic animate-fade-in" id="hero-graphic">
+          <div class="vitruvian-circle-wrapper">
+            <div class="vitruvian-circle"></div>
+            <img src="./elite_vitruvian_man_transparent.png" alt="Vitruvian Man Physical Therapy Symbol" class="vitruvian-img" id="hero-vitruvian-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Four Pillars Section -->
+    <section class="pillars-section" id="pillars-section">
+      <div class="container pillars-container">
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="pillar-card animate-reveal-scroll" id="pillar-1">
+            <div class="pillar-icon-wrapper">
+              <img src="./one-on-one-icon.png" alt="One on One Care Icon" class="pillar-icon">
+            </div>
+            <h2 class="pillar-title">ONE-ON-ONE CARE</h2>
+            <p class="pillar-text">You'll always work with a licensed therapist&mdash;every session, every time.</p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card animate-reveal-scroll" id="pillar-2">
+            <div class="pillar-icon-wrapper">
+              <img src="./evidence-based-treatment-icon.png" alt="Evidence Based Treatment Icon" class="pillar-icon">
+            </div>
+            <h2 class="pillar-title">EVIDENCE-BASED TREATMENT</h2>
+            <p class="pillar-text">Advanced techniques and proven methods for long-lasting results.</p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card animate-reveal-scroll" id="pillar-3">
+            <div class="pillar-icon-wrapper">
+              <img src="./whole-person-icon.png" alt="Whole Person Wellness Icon" class="pillar-icon">
+            </div>
+            <h2 class="pillar-title">WHOLE-PERSON WELLNESS</h2>
+            <p class="pillar-text">We treat the root cause, not just the symptoms.</p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="pillar-card animate-reveal-scroll" id="pillar-4">
+            <div class="pillar-icon-wrapper">
+              <img src="./experianced-sheild-icon.png" alt="Experienced Professionals Icon" class="pillar-icon">
+            </div>
+            <h2 class="pillar-title">EXPERIENCED PROFESSIONALS</h2>
+            <p class="pillar-text">Highly trained, passionate therapists dedicated to your recovery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conditions We Treat Section -->
+    <section class="conditions-section" id="conditions">
+      <div class="container conditions-container">
+        <div class="conditions-box">
+          <div class="conditions-header">
+            <div>
+              <p class="section-tag">WE HELP TREAT A WIDE RANGE OF CONDITIONS</p>
+              <h2 class="section-title text-dark">Get Relief. Get Back to Life.</h2>
+            </div>
+            <a href="#services" class="conditions-all-link" id="view-conditions-link">
+              VIEW ALL CONDITIONS
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <div class="conditions-grid">
+            <!-- Card 1 -->
+            <article class="condition-card animate-reveal-scroll" id="condition-card-1">
+              <div class="condition-img-wrapper">
+                <img src="./bakpain-posture.avif" alt="Back & Neck Pain rehabilitation treatment" class="condition-img">
+              </div>
+              <div class="condition-content">
+                <h3 class="condition-title">Back & Neck Pain</h3>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="condition-card animate-reveal-scroll" id="condition-card-2">
+              <div class="condition-img-wrapper">
+                <img src="./sports-injury.avif" alt="Sports Injuries physical therapy" class="condition-img">
+              </div>
+              <div class="condition-content">
+                <h3 class="condition-title">Sports Injuries</h3>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="condition-card animate-reveal-scroll" id="condition-card-3">
+              <div class="condition-img-wrapper">
+                <img src="./knee-pain.avif" alt="Joint Pain and arthritis relief therapy" class="condition-img">
+              </div>
+              <div class="condition-content">
+                <h3 class="condition-title">Joint Pain</h3>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="condition-card animate-reveal-scroll" id="condition-card-4">
+              <div class="condition-img-wrapper">
+                <img src="./massauge-therapy.avif" alt="Post-Surgery Recovery guidance and rehabilitation" class="condition-img">
+              </div>
+              <div class="condition-content">
+                <h3 class="condition-title">Post-Surgery Recovery</h3>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="condition-card animate-reveal-scroll" id="condition-card-5">
+              <div class="condition-img-wrapper">
+                <img src="./bakpain-posture.avif" alt="Work & Posture Issues correction" class="condition-img">
+              </div>
+              <div class="condition-content">
+                <h3 class="condition-title">Work & Posture Issues</h3>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="condition-card animate-reveal-scroll" id="condition-card-6">
+              <div class="condition-img-wrapper">
+                <img src="./sports-injury.avif" alt="Balance & Mobility training for older adults" class="condition-img">
+              </div>
+              <div class="condition-content">
+                <h3 class="condition-title">Balance & Mobility</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats & Testimonials Section -->
+    <section class="stats-section" id="testimonials">
+      <!-- Absolute Gold Watermark Background -->
+      <div class="gold-watermark-wrapper">
+        <img src="./gold-venturian.png" alt="" class="gold-watermark" aria-hidden="true">
+      </div>
+
+      <div class="container stats-container">
+        <div class="stats-grid">
+          <!-- Left Column: Testimonial -->
+          <div class="testimonial-col animate-reveal-scroll" id="testimonial-left-col">
+            <div class="stars-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              &ldquo;The staff is incredibly knowledgeable and genuinely cares about your progress. They helped me get back to running pain-free!&rdquo;
+            </blockquote>
+            <cite class="testimonial-author">&mdash; Michael R.</cite>
+          </div>
+
+          <!-- Right Column: Stats -->
+          <div class="stats-col animate-reveal-scroll" id="stats-right-col">
+            <div class="stat-item">
+              <span class="stat-number" id="stat-years">20+</span>
+              <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" id="stat-patients">10K+</span>
+              <span class="stat-label">Patients Helped</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" id="stat-rating">4.9</span>
+              <span class="stat-label">
+                Average Patient Rating
+                <span class="small-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Elite & Booking Overlay Section -->
+    <section class="about-section" id="about">
+      <div class="container about-container">
+        <div class="about-grid">
+          <!-- Left Column: Copy -->
+          <div class="about-content-col animate-reveal-scroll" id="about-text-content">
+            <p class="section-tag">ABOUT ELITE</p>
+            <h2 class="section-title text-dark">Local Care. Lasting Impact.</h2>
+            <p class="about-description">
+              At Elite Physical Therapy & Wellness Center, we combine personalized care with advanced techniques to help you heal, move better, and live stronger.
+            </p>
+            <ul class="about-list">
+              <li class="about-list-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Private treatment rooms</span>
+              </li>
+              <li class="about-list-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Flexible scheduling</span>
+              </li>
+              <li class="about-list-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Convenient location</span>
+              </li>
+              <li class="about-list-item">
+                <span class="check-icon">&#10003;</span>
+                <span>Insurance friendly</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Column: Image with Overlap Card -->
+          <div class="about-img-col animate-reveal-scroll" id="about-image-layout">
+            <div class="about-img-container">
+              <img src="./inside-PT-img.png" alt="State of the art Elite Physical Therapy clinic interior" class="about-main-img">
+              
+              <!-- Overlapping Card -->
+              <div class="overlap-booking-card" id="overlap-booking-card">
+                <div class="booking-card-header">
+                  <div class="booking-card-icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="booking-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <h3 class="booking-card-title">Ready to Take the First Step?</h3>
+                </div>
+                <p class="booking-card-text">
+                  Schedule your appointment today and experience the Elite difference.
+                </p>
+                <button class="btn btn-primary btn-full open-booking-modal" id="overlap-cta-btn">
+                  BOOK APPOINTMENT
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer" id="contact">
+    <div class="container footer-container">
+      <div class="footer-contacts">
+        <!-- Contact 1 -->
+        <div class="contact-item">
+          <div class="contact-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" class="contact-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <div>
+            <p class="contact-text font-bold">123 Wellness Way</p>
+            <p class="contact-subtext">Yourtown, ST 12345</p>
+          </div>
+        </div>
+
+        <!-- Contact 2 -->
+        <div class="contact-item">
+          <div class="contact-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" class="contact-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <div>
+            <p class="contact-text font-bold">(555) 123-4567</p>
+            <p class="contact-subtext">Call or text us anytime</p>
+          </div>
+        </div>
+
+        <!-- Contact 3 -->
+        <div class="contact-item">
+          <div class="contact-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" class="contact-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div>
+            <p class="contact-text font-bold">info@eliteptwellness.com</p>
+            <p class="contact-subtext">We respond within 24 hours</p>
+          </div>
+        </div>
+
+        <!-- Contact 4 -->
+        <div class="contact-item">
+          <div class="contact-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" class="contact-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <p class="contact-text font-bold">Mon - Fri: 7am - 7pm</p>
+            <p class="contact-subtext">Sat: 8am - 1pm</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Icons Column -->
+      <div class="footer-social-row">
+        <div class="social-links" id="social-links-container">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" class="social-svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" class="social-svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" class="social-svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.498 6.163c-.272-1.02-.1.018-1.047-1.29C21.464 4.542 19.37 4 12 4s-9.464.542-10.451.873c-.947.316-1.775 1.144-2.047 2.163C-.87 9.873-1 12-1 12s.13 2.127.502 5.837c.272 1.02.1-.018 1.047 1.29C1.536 19.458 3.63 20 12 20s9.464-.542 10.451-.873c.947-.316 1.775-1.144 2.047-2.163C24.87 14.127 25 12 25 12s-.13-2.127-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Legal Row -->
+      <div class="footer-legal-row">
+        <p class="copyright-text">&copy; 2026 Elite Physical Therapy & Wellness Center, Inc. All Rights Reserved.</p>
+        <div class="legal-links">
+          <a href="#" class="legal-link" id="legal-privacy">Privacy Policy</a>
+          <span class="legal-separator">|</span>
+          <a href="#" class="legal-link" id="legal-terms">Terms of Use</a>
+          <span class="legal-separator">|</span>
+          <a href="#" class="legal-link" id="legal-hipaa">HIPAA Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Appointment Modal -->
+  <div class="booking-modal-overlay" id="booking-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="booking-modal-container">
+      <button class="booking-modal-close" id="booking-modal-close" aria-label="Close booking modal">&times;</button>
+      
+      <div class="modal-form-wrapper" id="modal-form-wrapper">
+        <div class="modal-header">
+          <div class="modal-logo-wrapper">
+            <img src="./elite_logo_transparent_background.svg" alt="Elite Physical Therapy logo" class="modal-logo">
+          </div>
+          <h2 class="modal-title" id="modal-title">Request an Appointment</h2>
+          <p class="modal-subtitle">Take your first step toward recovery. Fill out the form below, and our coordinator will contact you to finalize your session.</p>
+        </div>
+
+        <form class="booking-form" id="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="booking-name" class="form-label">Full Name *</label>
+              <input type="text" id="booking-name" class="form-input" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="booking-phone" class="form-label">Phone Number *</label>
+              <input type="tel" id="booking-phone" class="form-input" placeholder="(555) 123-4567" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="booking-email" class="form-label">Email Address *</label>
+            <input type="email" id="booking-email" class="form-input" placeholder="johndoe@example.com" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="booking-date" class="form-label">Preferred Date</label>
+              <input type="date" id="booking-date" class="form-input">
+            </div>
+            <div class="form-group">
+              <label for="booking-time" class="form-label">Preferred Time</label>
+              <select id="booking-time" class="form-select">
+                <option value="" disabled selected>Select a time window</option>
+                <option value="morning">Morning (7:00 AM - 12:00 PM)</option>
+                <option value="afternoon">Afternoon (12:00 PM - 5:00 PM)</option>
+                <option value="evening">Evening (5:00 PM - 7:00 PM)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="booking-condition" class="form-label">Condition / Primary Concern</label>
+            <select id="booking-condition" class="form-select">
+              <option value="" disabled selected>Select a condition type</option>
+              <option value="back-neck">Back & Neck Pain</option>
+              <option value="sports">Sports Injuries</option>
+              <option value="joint">Joint Pain / Arthritis</option>
+              <option value="post-surgery">Post-Surgery Recovery</option>
+              <option value="work-posture">Work & Posture Issues</option>
+              <option value="balance-mobility">Balance & Mobility</option>
+              <option value="other">Other / Wellness Consultation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="booking-message" class="form-label">Additional details (Optional)</label>
+            <textarea id="booking-message" class="form-textarea" rows="3" placeholder="Tell us a little bit about what you are experiencing..."></textarea>
+          </div>
+
+          <div class="form-insurance-checkbox">
+            <input type="checkbox" id="booking-insurance" class="form-checkbox">
+            <label for="booking-insurance" class="checkbox-label">I would like to verify my insurance coverage before my visit</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full btn-large" id="submit-booking-btn">
+            SUBMIT REQUEST
+          </button>
+        </form>
+      </div>
+
+      <!-- Form Success State (hidden initially) -->
+      <div class="modal-success-wrapper" id="modal-success-wrapper" style="display: none;">
+        <div class="success-icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" class="success-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h2 class="success-title">Appointment Request Received!</h2>
+        <p class="success-text">Thank you, <span id="success-user-name" class="font-bold"></span>. We have successfully received your scheduling request.</p>
+        <p class="success-subtext">A dedicated patient care coordinator will call or email you within 2-4 business hours to confirm your scheduled time and collect any insurance details.</p>
+        
+        <div class="success-summary">
+          <p><strong>Primary Concern:</strong> <span id="summary-condition"></span></p>
+          <p><strong>Preferred Date & Time:</strong> <span id="summary-date-time"></span></p>
+        </div>
+
+        <button class="btn btn-primary" id="success-close-btn">
+          CLOSE WINDOW
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Logic Script -->
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
