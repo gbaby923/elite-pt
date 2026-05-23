@@ -308,8 +308,8 @@ function initPreloader() {
 
   // Wait for the window's full load event
   window.addEventListener('load', () => {
-    // Ensure the animation has at least 1.4s to display elegantly
-    setTimeout(fadeOutPreloader, 1400);
+    // Ensure the animation has at least 2.2s to display elegantly
+    setTimeout(fadeOutPreloader, 2200);
   });
 
   // Fallback: hide preloader in case load event takes too long
