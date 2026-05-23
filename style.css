@@ -723,19 +723,21 @@ a {
   min-height: 245px;
   display: flex;
   align-items: center;
+  isolation: isolate;
 }
 
 .gold-watermark-wrapper {
   position: absolute;
-  left: -35px;
+  left: -70px;
   top: 50%;
-  width: 260px;
-  height: 260px;
+  width: 340px;
+  height: 340px;
   transform: translateY(-50%);
   pointer-events: none;
-  opacity: 0.16;
-  mix-blend-mode: soft-light;
+  opacity: 1;
   z-index: 1;
+  background: transparent !important;
+  mix-blend-mode: normal;
 }
 
 .gold-watermark {
@@ -743,7 +745,10 @@ a {
   height: 100%;
   object-fit: contain;
   transform: none;
-  opacity: 1;
+  opacity: 0.22;
+  filter: sepia(1) saturate(1.4) brightness(1.18);
+  background: transparent !important;
+  mix-blend-mode: normal;
 }
 
 .stats-container {
