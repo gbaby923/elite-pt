@@ -1140,7 +1140,7 @@ a {
   position: relative;
   width: 100%;
   max-width: 520px;
-  padding-bottom: 60px; /* Leave space below for the overlapping card */
+  padding-bottom: 100px; /* Increased space below to support lowering the overlapping card */
 }
 
 .about-main-img {
@@ -1152,7 +1152,7 @@ a {
 /* Overlapping Card */
 .overlap-booking-card {
   position: absolute;
-  bottom: 0;
+  bottom: -60px; /* Shifted down by 60px to reveal the premium ELITE reception sign in the photo */
   right: -32px;
   width: 320px;
   background-color: var(--color-background-card);
