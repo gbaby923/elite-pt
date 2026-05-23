@@ -1676,16 +1676,16 @@ a {
 .preloader-logo-container {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 32px;
   opacity: 0;
   animation: preloaderContainerFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .preloader-man {
-  width: 96px; /* Enlarged loading brand mark */
-  height: 96px;
+  width: 140px; /* Bigger loading brand mark */
+  height: 140px;
   object-fit: contain;
-  transform: translateX(-100px) rotate(-270deg);
+  transform: translateX(-150px) rotate(-270deg);
   opacity: 0;
   animation: preloaderManRollIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
 }
@@ -1694,26 +1694,26 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-left: 1.5px solid rgba(10, 42, 32, 0.15);
-  padding-left: 20px;
+  border-left: 2px solid rgba(10, 42, 32, 0.15);
+  padding-left: 32px;
 }
 
 .preloader-brand-title {
   font-family: var(--font-serif);
-  font-size: 2.65rem;
+  font-size: 4.25rem; /* Larger brand title */
   font-weight: 700;
   letter-spacing: 0.18em;
   line-height: 1.1;
   color: var(--color-primary);
   margin-right: -0.18em; /* Offset letter-spacing on the far right */
   opacity: 0;
-  transform: translateX(15px);
+  transform: translateX(20px);
   animation: preloaderTextFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;
 }
 
 .preloader-brand-subtitle {
   font-family: var(--font-sans);
-  font-size: 0.58rem;
+  font-size: 0.92rem; /* Larger brand subtitle */
   font-weight: 700;
   letter-spacing: 0.08em;
   line-height: 1.3;
@@ -1721,13 +1721,13 @@ a {
   margin-top: 4px;
   text-transform: uppercase;
   opacity: 0;
-  transform: translateX(15px);
+  transform: translateX(20px);
   animation: preloaderTextFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.1s forwards;
 }
 
 .preloader-bar-container {
-  width: 160px;
-  height: 2px;
+  width: 260px; /* Wider progress bar */
+  height: 2.5px;
   background-color: var(--color-border);
   border-radius: 2px;
   overflow: hidden;
