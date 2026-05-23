@@ -866,11 +866,12 @@ a {
   overflow: hidden;
 }
 
-.director-grid {
+.director-top-row {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
-  align-items: center;
+  align-items: flex-start;
   gap: 88px;
+  margin-bottom: 64px;
 }
 
 .director-img-col {
@@ -937,10 +938,11 @@ a {
 .director-content-col {
   display: flex;
   flex-direction: column;
+  padding-top: 8px; /* Visual offset alignment */
 }
 
 .director-bio {
-  margin: 24px 0 36px;
+  margin: 24px 0 0;
 }
 
 .bio-intro {
@@ -961,27 +963,38 @@ a {
   margin-bottom: 0;
 }
 
-/* Credentials Grid */
+/* Bottom Row containing the 4 trust cards and CTA */
+.director-bottom-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+}
+
+/* Credentials Grid - Spanned horizontally in 4 columns */
 .credentials-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: 100%;
 }
 
 .credential-card-small {
   display: flex;
   gap: 16px;
-  background-color: var(--color-background-sage);
+  background-color: var(--color-background-card);
   border-radius: var(--border-radius-md);
   padding: 20px;
   border: 1px solid rgba(20, 66, 54, 0.05);
-  transition: transform var(--transition-fast), border-color var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .credential-card-small:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
   border-color: rgba(197, 168, 90, 0.3);
+  box-shadow: var(--shadow-md);
 }
 
 .credential-icon {
@@ -1007,25 +1020,33 @@ a {
 
 .director-cta-row {
   display: flex;
+  justify-content: center;
 }
 
 /* Responsive Overrides */
-@media (max-width: 1024px) {
-  .director-grid {
+@media (max-width: 1200px) {
+  .director-top-row {
     gap: 48px;
+    margin-bottom: 48px;
+  }
+  .credentials-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid on tablets and small desktops */
+    gap: 20px;
   }
 }
 
 @media (max-width: 991px) {
-  .director-grid {
+  .director-top-row {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 40px;
+    margin-bottom: 40px;
   }
   .director-img-col {
-    order: 2;
+    order: 1; /* Image first for clean mobile visual connection */
   }
   .director-content-col {
-    order: 1;
+    order: 2;
+    padding-top: 0;
   }
 }
 
@@ -1033,8 +1054,12 @@ a {
   .director-section {
     padding: 80px 0;
   }
+  .director-top-row {
+    gap: 32px;
+    margin-bottom: 32px;
+  }
   .credentials-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack vertically on small screens */
     gap: 16px;
   }
   .director-badge {
@@ -1045,6 +1070,9 @@ a {
   }
   .badge-title {
     font-size: 1.1rem;
+  }
+  .director-bottom-row {
+    gap: 36px;
   }
 }
 
