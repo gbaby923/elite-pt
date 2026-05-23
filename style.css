@@ -361,11 +361,32 @@ a {
   overflow: hidden;
   background-color: #fbfaf7;
   background-image:
-    linear-gradient(90deg, #fbfaf7 0%, rgba(251, 250, 247, 0.96) 43%, rgba(251, 250, 247, 0.74) 68%, rgba(251, 250, 247, 0.28) 100%),
+    linear-gradient(
+      90deg,
+      #fbfaf7 0%,
+      rgba(251, 250, 247, 0.98) 38%,
+      rgba(251, 250, 247, 0.88) 58%,
+      rgba(251, 250, 247, 0.58) 78%,
+      rgba(251, 250, 247, 0.22) 100%
+    ),
     url('./Hero_background.png');
-  background-size: cover;
-  background-position: calc(100% + 220px) center;
+  background-size: auto 92%;
+  background-position: right -90px center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 1440px) {
+  .hero-section {
+    background-size: auto 88%;
+    background-position: right -40px center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-section {
+    background-size: auto 95%;
+    background-position: right -150px center;
+  }
 }
 
 /* Splitscreen column widths: Left (46%), Right (54%) */
@@ -1308,6 +1329,11 @@ a {
 /* Tablet & Smaller Devices (Below 1024px) */
 @media (max-width: 1024px) {
   /* Layout constraints adjustments */
+  .hero-section {
+    background-size: auto 75%;
+    background-position: right -220px top 90px;
+  }
+
   .hero-container {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -1414,7 +1440,8 @@ a {
 
   .hero-section {
     padding: 110px 0 64px;
-    background-position: right center;
+    background-size: auto 60%;
+    background-position: right -240px top 80px;
   }
 
   .vitruvian-circle-wrapper {
