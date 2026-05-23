@@ -4,6 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initPreloader();
   initHeaderScroll();
   initMobileMenu();
   initScrollReveal();
@@ -286,4 +287,35 @@ function initStatsCounter() {
 
   window.addEventListener('scroll', checkScroll);
   checkScroll(); // Run once in case it's in viewport on load
+}
+
+/**
+ * 6. Premium Preloader Loading Buffer
+ */
+function initPreloader() {
+  const preloader = document.getElementById('preloader');
+  if (!preloader) return;
+
+  const fadeOutPreloader = () => {
+    preloader.classList.add('fade-out');
+    document.body.classList.remove('preloader-active');
+    
+    // Completely remove preloader node from DOM after transition completes
+    setTimeout(() => {
+      preloader.remove();
+    }, 600);
+  };
+
+  // Wait for the window's full load event
+  window.addEventListener('load', () => {
+    // Ensure the animation has at least 1.4s to display elegantly
+    setTimeout(fadeOutPreloader, 1400);
+  });
+
+  // Fallback: hide preloader in case load event takes too long
+  setTimeout(() => {
+    if (preloader.parentNode) {
+      fadeOutPreloader();
+    }
+  }, 4000);
 }
