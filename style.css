@@ -23,7 +23,7 @@
   
   /* Layout & Elevations */
   --max-width: 1200px;
-  --header-height: 80px;
+  --header-height: 96px;
   --border-radius-sm: 4px;
   --border-radius-md: 8px;
   --border-radius-lg: 16px;
@@ -252,9 +252,9 @@ a {
 
 .header-container {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 220px 1fr 220px;
   align-items: center;
-  justify-content: space-between;
 }
 
 .logo-link {
@@ -263,14 +263,15 @@ a {
 }
 
 .logo-img {
-  height: 48px; /* High fidelity matching logo height */
-  width: auto;
+  width: 180px;
+  height: auto;
 }
 
 /* Navigation Links styling */
 .nav-menu {
   display: flex;
   align-items: center;
+  justify-self: center;
 }
 
 .nav-list {
@@ -313,10 +314,16 @@ a {
 .header-action {
   display: flex;
   align-items: center;
+  justify-self: end;
 }
 
 #header-cta-btn {
-  padding: 10px 20px;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 0.75rem;
 }
 
@@ -346,41 +353,52 @@ a {
    HERO SECTION
    ========================================================================== */
 .hero-section {
-  padding-top: calc(var(--header-height) + 40px);
-  padding-bottom: 60px;
-  background-image: url('./Hero_background.png');
-  background-size: cover;
-  background-position: center right;
-  min-height: 80vh;
+  padding: 90px 0 110px;
+  min-height: calc(100vh - 96px);
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
+  background-color: #F2F6F5; /* Warm off-white background */
+  background-image: 
+    linear-gradient(90deg, #F2F6F5 35%, rgba(242, 246, 245, 0.82) 65%, rgba(242, 246, 245, 0.15) 100%), 
+    url('./Hero_background.png');
+  background-size: cover;
+  background-position: calc(100% + 120px) center;
+  background-repeat: no-repeat;
 }
 
-/* Fine-tune layout for splitscreen */
+/* Splitscreen column widths: Left (45%), Right (55%) */
 .hero-container {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 45% 55%;
   align-items: center;
-  gap: 40px;
   width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
+  padding-right: 20px;
 }
 
 .hero-tagline {
-  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--color-primary-light);
+  text-transform: uppercase;
+  margin-bottom: 24px;
 }
 
 .hero-title {
   font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 5.5vw, 4.25rem);
+  font-size: clamp(76px, 5.5vw, 88px);
   font-weight: 800;
-  line-height: 1.15;
+  line-height: 0.98;
   color: var(--color-primary);
   margin-bottom: 24px;
   display: flex;
@@ -392,16 +410,36 @@ a {
 }
 
 .hero-description {
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-size: clamp(20px, 1.6vw, 22px);
   color: var(--color-text-muted);
-  max-width: 480px;
-  margin-bottom: 36px;
+  max-width: 520px;
+  line-height: 1.55;
+  margin-bottom: 0;
 }
 
 .hero-actions {
   display: flex;
   gap: 16px;
-  margin-bottom: 40px;
+  margin-top: 36px;
+}
+
+#hero-cta-book {
+  width: 245px;
+  height: 56px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-cta-services {
+  width: 200px;
+  height: 56px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1.5px;
 }
 
 /* Insurance trust badge */
@@ -419,6 +457,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 50px;
   align-self: flex-start;
+  margin-top: 32px;
 }
 
 .badge-svg {
@@ -432,31 +471,31 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  width: 100%;
 }
 
 .vitruvian-circle-wrapper {
   position: relative;
-  width: 90%;
-  max-width: 450px;
+  width: clamp(360px, 33vw, 500px);
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.92;
 }
 
 .vitruvian-circle {
   position: absolute;
-  width: 90%;
-  height: 90%;
-  border: 1px solid rgba(10, 42, 32, 0.15);
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(10, 42, 32, 0.12);
   border-radius: 50%;
 }
 
 .vitruvian-img {
   position: absolute;
-  width: 82%;
-  height: 82%;
+  width: 85%;
+  height: 85%;
   object-fit: contain;
   transition: transform var(--transition-slow);
 }
@@ -1350,6 +1389,12 @@ a {
 @media (max-width: 768px) {
   :root {
     --header-height: 70px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   /* Header navigation mobile drawer styling */
