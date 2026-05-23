@@ -19,6 +19,7 @@
   
   /* Fonts */
   --font-serif: 'Playfair Display', Georgia, serif;
+  --font-logo: 'Bodoni Moda', 'Playfair Display', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   
   /* Layout & Elevations */
@@ -1699,7 +1700,7 @@ a {
 }
 
 .preloader-brand-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-logo);
   font-size: 5.5rem; /* Bold, high-end title size */
   font-weight: 700;
   letter-spacing: 0.18em;
