@@ -1021,6 +1021,7 @@ a {
 .director-cta-row {
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
 /* Responsive Overrides */
@@ -1073,6 +1074,15 @@ a {
   }
   .director-bottom-row {
     gap: 36px;
+  }
+  .director-cta-row {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  .director-cta-row .btn {
+    width: 100%;
+    text-align: center;
   }
 }
 
