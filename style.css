@@ -1693,37 +1693,18 @@ a {
 
 .preloader-text-block {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   border-left: 3px solid rgba(10, 42, 32, 0.15);
   padding-left: 40px;
 }
 
-.preloader-brand-title {
-  font-family: var(--font-logo);
-  font-size: 5.5rem; /* Bold, high-end title size */
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  line-height: 1.1;
-  color: var(--color-primary);
-  margin-right: -0.18em; /* Offset letter-spacing on the far right */
+.preloader-text-img {
+  height: 110px; /* Perfectly scaled to fit cinematically alongside the 200px logo mark */
+  object-fit: contain;
+  display: block;
   opacity: 0;
-  transform: translateX(30px);
-  animation: preloaderTextFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;
-}
-
-.preloader-brand-subtitle {
-  font-family: var(--font-sans);
-  font-size: 1.15rem; /* Larger, readable brand subtitle */
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  line-height: 1.3;
-  color: var(--color-primary-light);
-  margin-top: 6px;
-  text-transform: uppercase;
-  opacity: 0;
-  transform: translateX(30px);
-  animation: preloaderTextFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.1s forwards;
+  transform: translateX(40px);
+  animation: preloaderTextFadeIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
 }
 
 .preloader-bar-container {
@@ -1788,14 +1769,8 @@ a {
     padding-left: 20px;
     border-left-width: 2px;
   }
-  .preloader-brand-title {
-    font-size: 2.6rem;
-    letter-spacing: 0.15em;
-  }
-  .preloader-brand-subtitle {
-    font-size: 0.6rem;
-    letter-spacing: 0.05em;
-    margin-top: 4px;
+  .preloader-text-img {
+    height: 52px; /* Scaled down perfectly for mobile viewports */
   }
   .preloader-bar-container {
     width: 180px;
